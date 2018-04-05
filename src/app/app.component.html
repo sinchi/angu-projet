@@ -6,9 +6,9 @@
     <li ngbDropdown  class="nav-item">
       <a ngbDropdownToggle class="nav-link">Username</a>
       <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-        <button class="dropdown-item">My Orders</button>
-        <button class="dropdown-item">Manage Orders</button>
-        <button class="dropdown-item">Manage Producets</button>
+        <button [routerLink]="'orders'" class="dropdown-item">My Orders</button>
+        <button [routerLink]="'orders'" class="dropdown-item">Manage Orders</button>
+        <button [routerLink]="'products'" class="dropdown-item">Manage Products</button>
         <button class="dropdown-item">Log Out</button>
       </div>
     </li>
